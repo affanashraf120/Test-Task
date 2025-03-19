@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+} */
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Skill tag styling */
+.skill-tag {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-tag .level {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.skill-tag .level.expert {
+  color: #22c55e; /* Brighter green */
+}
+
+.skill-tag .level.advance {
+  color: #2563eb; /* Brighter blue */
+}
+
+.skill-tag .level.intermediate {
+  color: #f97316; /* Brighter orange */
+}
+
+.skill-tag .level.basic {
+  color: #4b5563; /* More visible gray */
+}
+
+/* Title and section styling */
+h1, h2 {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 200;
+}
+
+/* Timeline styling */
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 8px;
+}
+
+.timeline-line {
+  border-left: 2px solid #3b82f6;
+  padding-left: 2rem;
+  position: relative;
+}
+
+/* Company names */
+.company-name {
+  color: #2563eb;
+}
+
+/* Text content */
+.text-content {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.text-date {
+  color: rgba(0, 0, 0, 0.5);
+}
